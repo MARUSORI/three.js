@@ -4,11 +4,13 @@
 		<title></title>
 		<meta charset="utf-8">
 		<meta name="generator" content="Three.js Editor">
-		<meta name="viewport" content="height=device-height, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="viewport" content="width=device-width , user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
 			body {
 				font-family: sans-serif;
 				font-size: 11px;
+				width: max-width;
+				height: max-height;												
 				background-color: #000;
 				margin: 0px;
 			}
@@ -20,9 +22,13 @@
 	<body ontouchstart="">
 		<script type="module">
 
+		 
+
 			import * as THREE from './js/three.module.js';
 			import { APP } from './js/app.js';
 			import { VRButton } from './js/VRButton.js';
+
+			
 
 			window.THREE = THREE; // Used by APP Scripts.
 			window.VRButton = VRButton; // Used by APP Scripts.

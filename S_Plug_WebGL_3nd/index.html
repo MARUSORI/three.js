@@ -7,6 +7,26 @@
 
 <body  marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
 
-<iframe name='contentFrame' src='./contents/index.html'  width="100%" scroll="no" border='0' frameborder='0'  onLoad="iframe_autoresize(this)"></iframe>
+<iframe id = 'contentFrame' name='contentFrame' src='./contents/index.html'  width="100%" scroll="no" border='0' frameborder='0'  onLoad="iframe_autoresize(this)"></iframe>
 </body>
+<script >
+
+		var contentFrame = document.getElementById("contentFrame");
+		var width_size = window.innerWidth;
+		var height_size = window.innerHeight ;
+		contentFrame.with = 	width_size;
+		contentFrame.height  = height_size;
+		window.addEventListener('resize', function() {
+				var width_size = window.innerWidth;
+				var height_size = window.innerHeight ;
+				
+					  console.log('width_size: '+ width_size);
+					  console.log('width_size: '+ width_size);
+					  contentFrame.with = 	width_size;
+					  contentFrame.height  = height_size;
+
+			}, true);
+
+</script>
+
 </html>
